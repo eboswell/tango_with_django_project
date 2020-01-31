@@ -103,7 +103,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
+#this is where a user is redirected to if they try to access restricted content without
+#being logged in
+LOGIN_URL = 'rango:login'
 # Internationalization
 # https://docs.djangoproject.com/en/2.2/topics/i18n/
 
@@ -129,3 +131,4 @@ STATICFILES_DIRS = [STATIC_DIR, ]
 
 MEDIA_ROOT = MEDIA_DIR
 MEDIA_URL = '/media/'
+
